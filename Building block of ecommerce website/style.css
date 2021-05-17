@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+    * {
+        box-sizing: border-box;
+    }
+  
+
+.header{
+    background-color: gray;
+    color: white;
+    padding: inherit;    
+}
+
+.nav{
+    text-align: center;
+}
+.header  a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+}
+.nav  a:hover{
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.header h1{
+    font-size: 50px;
+    
+}
+.band-name{
+    text-align: center;
+}
+
+.container{
+    font-family: sans-serif;
+}
+
+.music {
+    color:black;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Metal Mania";
+    text-decoration: none;
+}
+
+.album1-header{
+    
+        display: flex;
+        /* width: 100%; */
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5em;
+        color: #333;
+        margin-left: 350px;
+        /* margin-bottom: 15px; */
+    }
+
+
+.img1{
+    display: flex;
+    height: 350px;
+    margin-left: 200px;
+    width: 350px;    
+}
+
+.firstrow{
+    float: left;
+    margin-right: 200px;
+}
+
+.addtocart{
+    margin-right: 100px;
+    background-color:skyblue;
+}
+
+.album4 button{
+    padding: 10px;
+    margin: 10px;
+}
+.album1 button{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 200px;
+    
+}
+.album2 button{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 200px;
+}
+.album3 button{
+    padding: 10px;
+    margin: 10px;
+}
+
+.MERCH{
+    color:black;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Metal Mania";
+    text-decoration: none;   
+}
+
+.tshirt{
+    float: left;
+    height: 350px;
+    width: 350px;
+    
+}
+
+.coffee{
+    float: right;
+    margin-right: 450px;
+    height: 350px;
+    width: 350px;
+}
+
+.tshirt button{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 200px;
+}
+
+.coffee button{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 200px;
+}
+
+
+
