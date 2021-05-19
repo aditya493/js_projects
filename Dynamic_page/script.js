@@ -101,3 +101,76 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
+
+
+
+// IMAGE ZOOM
+
+// var image_zoomer_container = document.getElementsByClassName("shop-item");
+// const image_zoomer_img = document.getElementsByClassName("shop-item-image")
+// for (var i = 0; i < image_zoomer_container.length; i++){
+//     image_zoomer_container_a=image_zoomer_container[i]
+//     const image_zoomer_img_i=image_zoomer_img[i]
+//     image_zoomer_container_a.addEventListener("mousemove",perform_zoom)
+//     image_zoomer_container_a.addEventListener("mouseleave",perform_zoom_out)
+// }
+
+
+
+// function perform_zoom(e) {
+//     const x=e.clientX - e.target.offsetLeft;
+//     const y=e.clientY - e.target.offsetTop;
+//     const image_zoomer_img = document.getElementsByClassName("shop-item-image")[0]
+//     // for (var i = 0; i < image_zoomer_img.length; i++){
+    
+//     //     var image_zoomer_img_i=image_zoomer_img[i];
+//     image_zoomer_img_i.style.transformOrigin = `${x}px ${y}px`;
+
+//     image_zoomer_img_i.style.transform = "scale(2)";
+//     // }
+// };
+
+// function perform_zoom_out(){
+//     const image_zoomer_img = document.getElementsByClassName("shop-item-image")[0]
+//     // for (var i = 0; i < image_zoomer_img.length; i++){
+//     //     var image_zoomer_img_i=image_zoomer_img[0];
+//     image_zoomer_img_i.style.transformOrigin = "center center";
+//     image_zoomer_img_i.style.transform = "scale(1)";
+//     // }
+// };
+
+
+
+// TOAST
+
+var toast_messege_addtocart = document.getElementsByClassName("shop-item-button")
+const container = document.getElementsByClassName("shop-item-details")
+for (var i=0;i<toast_messege_addtocart.length;i++){
+    var toast_messege_addtocart_i = toast_messege_addtocart[i]
+
+    const container_i=container[i]
+
+    toast_messege_addtocart_i .addEventListener("click", () => {
+    createnotification();
+})
+
+function createnotification(){
+    const notif = document.createElement('div');
+    notif.classList.add('cart-price');
+
+    notif.innerText = "Added to cart";
+
+    
+    // for (var i=0;i<container.length;i++){
+    //    const container_i=container[i]
+    container_i.append(notif);
+    setTimeout(() => {
+        notif.remove();
+    },1000);
+
+    }
+    // setTimeout(() => {
+    //     notif.remove();
+    // },1000);
+
+}
